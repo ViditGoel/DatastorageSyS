@@ -7,10 +7,8 @@ from datetime import datetime
 import DATASTORAGE_SYS.check_data as check
 
 class DataStoreCRD:
-    #def check_time_span(self):
-
     def create_data(self,KEY,DATA1,DATA2,time_to_live,default="Saved successfully"):
-        if path.isfile(con.db_path+con.db_name):
+        try:
             with open(con.db_path+con.db_name) as jsondb_f1:
                 #portalocker.lock(jsondb_f1, portalocker.LOCK_EX)
                 data=json.load(jsondb_f1)
@@ -30,11 +28,13 @@ class DataStoreCRD:
 
             #READING DATA
             return json_format, status+" and "+default
-        else:
-            with open(con.db_path+con.db_name,"w+"):
-                not_default="Database not existed!....NEW DATABASE IS CREATED AND SAVED SUCCESSFULLY"
-                obj=DataStoreCRD()
-                obj.create_data(KEY,DATA1,DATA2,time_to_live,not_default)
+        except:
+            j=json.dumps({})
+            with open(con.db_path+con.db_name,"w+") as jsondb_f1:
+                jsondb_f1.write(j)
+            obj=DataStoreCRD()
+            json_format, sta=obj.create_data(KEY,DATA1,DATA2,time_to_live,"Database not existed!....NEW DATABASE IS CREATED AND SAVED SUCCESSFULLY")
+            return json_format, sta
 
     def read_data(self,KEY,default="Here is your data: "):
         try:
@@ -71,7 +71,6 @@ class DataStoreCRD:
             return default+str(KEY)
         except Exception:
             return "Key: "+KEY+" not existed or may be expired."
-
 
 
 
