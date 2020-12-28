@@ -2,7 +2,7 @@
 
 ## Data storage system #Python #Frontend #Backend #Flask #json #pylib #html, assignment of Freshworks
 
-[![PYTHON](https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)     [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)](https://www.w3schools.com/html/) [![flask](https://img.shields.io/badge/flask%20-%2314354C.svg?&style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/en/1.1.x/) [![json](https://img.shields.io/badge/json%20-%23grey.svg?&style=for-the-badge&logo=json&logoColor=white)](https://www.w3schools.com/js/js_json_intro.asp) [![freshworks](https://img.shields.io/badge/freshworks%20-%23orange.svg?&style=for-the-badge&logo=freshworks&logoColor=white)](https://www.freshworks.com/)
+[![PYTHON](https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)     [![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)](https://www.w3schools.com/html/) [![flask](https://img.shields.io/badge/flask%20-%2314354C.svg?&style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/en/1.1.x/) [![json](https://img.shields.io/badge/json%20-hotpink.svg?&style=for-the-badge&logo=json&logoColor=white)](https://www.w3schools.com/js/js_json_intro.asp) [![freshworks](https://img.shields.io/badge/freshworks%20-%23orange.svg?&style=for-the-badge&logo=freshworks&logoColor=white)](https://www.freshworks.com/)
 
 # PROBLEM STATEMENT
 
